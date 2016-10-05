@@ -1,4 +1,3 @@
-
 //test to see whether it conflicts
 $("div #imagePlantation").hide();
 $("div #imagePlantation").fadeIn(3000);
@@ -16,10 +15,6 @@ function initMap() {
           map: map
         });
       }
-
-
-52.340452, 4.823191
-
 //fadeOut image/fadeIn tekst
 $(document).ready(function(){
 	$(".textPlantation").hide();
@@ -68,5 +63,9 @@ $(document).ready(function(){
 //     $("#imagePlantation").css({
 //     'opacity' : 1-(($(this).scrollTop())/100)
 //     });          
+<<<<<<< HEAD
 // });
 
+=======
+// });
+>>>>>>> 12d86373eb4d6c3edf6a69c05b5d4280a14e2ffc
