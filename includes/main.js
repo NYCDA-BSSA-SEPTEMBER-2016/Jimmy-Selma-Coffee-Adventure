@@ -5,13 +5,16 @@ $("div #imagePlantation").fadeIn(3000);
 // Google Maps on the contact page
 
 function initMap() {
-        var uluru = {lat: 52.341099 lng: 4.823463};
+        var AmsterdamCity = {lat: 52.341099, lng: 4.823463};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
+          zoom: 12,
+          center: AmsterdamCity
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: AmsterdamCity,
           map: map
         });
       }
+
+
+52.340452, 4.823191
