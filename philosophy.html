@@ -17,14 +17,17 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span> 
 				</button>
-				<a class="navbar-brand" href="#">Selmy Coffee</a>
+				<a class="navbar-brand" href="#" class=navText>Selmy Coffee</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a href="webshop.html">Webshop</a></li> 
-					<li><a href="philosophy.html">Our philosophy</a></li> 
-					<li><a href="contact.html">Contact</a></li>
-					<li><span class="glyphicon glyphicon-shopping-cart" style="color=white;"> </a></li>
+					<li><a href="webshop.html" class=navText>Evt our slogan here?</a></li> 
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="webshop.html" class=navText>Webshop</a></li>
+					<li><a href="philosophy.html" class=navText>Our philosophy</a></li> 
+					<li><a href="contact.html" class=navText>Contact</a></li>
+					<li><span class="glyphicon glyphicon-shopping-cart" id=cartIcon></a></li>
 				</ul>
 			</div>
 		</div>
@@ -32,7 +35,7 @@
 
 	<div class="container">
 		<div class="col-sm-12">
-			<h1>Our philosophy</h1>
+			<h1><span class="glyphicon glyphicon-leaf" class=leafIcon></span> Our philosophy</h1>
 			<img id=imagePlantation src="images/philosophy_plantation.jpg" alt="A worker on the plantation" style="width:100%;">
 			<p class=textPlantation>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -113,8 +116,11 @@
 
 
 <footer>
-
+<div class="col-sm-12" id=footerDiv>
+<p>hello world</p>
+</div>
 </footer>
+
 
 <script src="./includes/jquery-3.1.1.min.js"></script>
 <script src='./includes/bootstrap/js/bootstrap.min.js'></script>
