@@ -80,13 +80,14 @@ h1 {
 	background-image: url("./images/coffeefooter.png");
 }*/
 
-#footerDiv{
+/*#footerDiv{
 	height: 500px;
 	background-image: url("./images/coffeefooter.png");
-}
+}*/
 
 .container{
 	background-color: #fff7e6;
+	height: 100%;
 }
 
 
@@ -104,9 +105,13 @@ h1 {
 	background-color: #4d3300;
 }
 
+#logo {
+	height: 50px;
+}
+
 .navText {
-	/*font-size: 30px; Waarom werkt dit wel*/
-	/*color: white; waarom werkt dit niet*/
+/*	font-size: 30px; Waarom werkt dit wel
+	color: black; waarom werkt dit niet*/
 }
 
 
@@ -262,3 +267,19 @@ label.required:after {
     left: 0;
 }​
 
+.carouselImage {
+	width: 100%;
+}
+
+#myCarousel {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	font-size: 40px;
+}
