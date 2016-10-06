@@ -2,6 +2,14 @@
 $("div #imagePlantation").hide();
 $("div #imagePlantation").fadeIn(3000);
 
+// front page JavaScript
+
+$(document).ready(function () {
+	$('#frontpage').toggleClass('editor')
+});
+
+
+
 // Google Maps on the contact page
 
 function initMap() {

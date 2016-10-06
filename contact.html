@@ -8,71 +8,96 @@
 
 
 <body>
+	<div class="bodyColor">
+		<div class="bodyReplacement">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a class="navbar-brand" href="#" class="navText"><img src="images/logo_only.png" alt="Logo" id="logo"></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="#" class="navText"><i>The Best &amp; The Fairest</i></a></li> 
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="webshop.html" class="navText">Webshop</a></li>
+							<li><a href="philosophy.html" class="navText">Our philosophy</a></li> 
+							<li><a href="contact.html" class="navText">Contact</a></li>
+							<li><span class="glyphicon glyphicon-shopping-cart" id=cartIcon></span></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="col-sm-12">
+					<h1><span class="glyphicon glyphicon-leaf" class=leafIcon></span> Contact</h1>
+				</div>
+			</div>
 
-	<div class="container">
-		<div class="col-sm-12">
-			<h1><span class="glyphicon glyphicon-leaf" class=leafIcon></span> Contact</h1>
-		</div>
-	</div>
+			<div class="container">
+				<div class="col-sm-6">
+					<h2>Adresgegevens</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
 
-	<div class="container">
-		<div class="col-sm-6">
-			<h2>Adresgegevens</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-
-			<p  title="Bel ons absoluut niet nooit, gewoon nie!" class="phone"> <span class="glyphicon glyphicon-earphone" id="phoneicon"> </span> <a href="tel:0800-belonsniet">+31 800-235 667 6438</a>
-		</p>
-		</div>
-		<div class="col-sm-6">
-			<h2>Find us here!</h2>
-				<div id="map"></div>
+					<p  title="Bel ons absoluut niet nooit, gewoon nie!" class="phone"> <span class="glyphicon glyphicon-earphone" id="phoneicon"> </span> <a href="tel:0800-belonsniet">+31 800-235 667 6438</a>
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<h2>Find us here!</h2>
+					<div id="map"></div>
 					
+				</div>
+			</div>
+
+			<div class="container" id="containercontactform">
+				<div class="col-sm-6">
+					<h2>Contactform</h2>
+					<p> If you like to reach us please fill in the contact form below </p>
+					<div id="after_submit"></div>
+					<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+						<div class="row">
+							<label class="required" for="name">Your name:</label><br />
+							<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+							<span id="name_validation" class="error_message"></span>
+						</div>
+						<div class="row">
+							<label class="required" for="email">Your email:</label><br />
+							<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+							<span id="email_validation" class="error_message"></span>
+						</div>
+						<div class="row">
+							<label class="required" for="message">Your message:</label><br />
+							<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+							<span id="message_validation" class="error_message"></span>
+						</div>
+
+						<input id="submit_button" type="submit" value="Send email" />
+					</form>
+				</div>
+			</div>
 		</div>
-	</div>
-
-	<div class="container" id="containercontactform">
-		<div class="col-sm-6">
-			<h2>Contactform</h2>
-			<p> If you like to reach us please fill in the contact form below </p>
-			<div id="after_submit"></div>
-			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-				<div class="row">
-					<label class="required" for="name">Your name:</label><br />
-					<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-					<span id="name_validation" class="error_message"></span>
-				</div>
-				<div class="row">
-					<label class="required" for="email">Your email:</label><br />
-					<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-					<span id="email_validation" class="error_message"></span>
-				</div>
-				<div class="row">
-					<label class="required" for="message">Your message:</label><br />
-					<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-					<span id="message_validation" class="error_message"></span>
-				</div>
-
-				<input id="submit_button" type="submit" value="Send email" />
-			</form>
-		</div>
-	</div>
-
+	</dir>
 </body>
 
 
 <footer>
-
+<img src="images/coffeefooter.png" alt="Coffebeans" class="footerImage">
 </footer>
 
 <script src="./includes/jquery-3.1.1.min.js"></script>
 <script src='./includes/bootstrap/js/bootstrap.min.js'></script>
 <script src="./includes/main.js"></script>
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-v0OSacOnz4uyF1rsSaKAeTg66FfrfLk&callback=initMap">   </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-v0OSacOnz4uyF1rsSaKAeTg66FfrfLk&callback=initMap">   </script>
 
 </html>
