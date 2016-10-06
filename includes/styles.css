@@ -1,9 +1,62 @@
 /*We need to pick a font for website, maybe a google font?*/
+/*Body nog centreren ook (zie pagina op fullscreen)*/
 
 body{
     width: 414px;
     font-family: Arial;
 	font-size: 14px;
+/*	background-color: #b37a00;*/
+	display: table-cell;
+    vertical-align: middle;
+    background-color: #ffefcc;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+h1 {
+	padding-top: 80px;
+	padding-bottom: 40px;
+	color: #4d3300;
+}
+
+/*footer{
+	background-image: url("./images/coffeefooter.png");
+}*/
+
+#footerDiv{
+	height: 500px;
+	background-image: url("./images/coffeefooter.png");
+}
+
+.container{
+	background-color: #fff7e6;
+}
+
+
+
+/*Navbar*/
+#cartIcon {
+    color: white;
+    font-size: 30px;
+    padding-top: 6px; /*Misschien beter om met verticaal alignen te doen?*/
+    padding-right: 50px;
+    padding-left: 15px; /*(zelfde als de buttons)*/
+}
+
+.navbar {
+	background-color: #4d3300;
+}
+
+.navText {
+	/*font-size: 30px; Waarom werkt dit wel*/
+	/*color: white; waarom werkt dit niet*/
 }
 
 
