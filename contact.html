@@ -39,13 +39,27 @@
 	<div class="container">
 		<div class="col-sm-12">
 			<h2>Contactform</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			<p> If you like to reach us please fill in the contact form below
+			<div id="after_submit"></div>
+			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+				<div class="row">
+					<label class="required" for="name">Your name:</label><br />
+					<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+					<span id="name_validation" class="error_message"></span>
+				</div>
+				<div class="row">
+					<label class="required" for="email">Your email:</label><br />
+					<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+					<span id="email_validation" class="error_message"></span>
+				</div>
+				<div class="row">
+					<label class="required" for="message">Your message:</label><br />
+					<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+					<span id="message_validation" class="error_message"></span>
+				</div>
+
+				<input id="submit_button" type="submit" value="Send email" />
+			</form>
 		</div>
 	</div>
 
