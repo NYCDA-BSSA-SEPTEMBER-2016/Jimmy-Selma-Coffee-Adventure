@@ -1,6 +1,14 @@
-//test to see whether it conflicts
-$("div #imagePlantation").hide();
-$("div #imagePlantation").fadeIn(3000);
+//IVM CAROUSEL INACTIEF test to see whether it conflicts
+$("#myCarousel").hide();
+
+$("#myCarousel")
+  .css('opacity', 0)
+  .slideDown(3000)
+  .animate(
+    { opacity: 1 },
+    { queue: false, duration: 3000 }
+  );
+
 
 // front page JavaScript
 
@@ -23,22 +31,22 @@ function initMap() {
           map: map
         });
       }
-//fadeOut image/fadeIn tekst
-$(document).ready(function(){
-	$(".textPlantation").hide();
+//IVM CAROUSEL INACTIEFfadeOut image/fadeIn tekst
+// $(document).ready(function(){
+// 	$(".textPlantation").hide();
 
-	// $("body").scroll(function(){
-	// 	console.log('scroll triggered')
-	// 	$("#imagePlantation").fadeOut(3000);
-	// });
-	$(document).on( 'scroll', function(){
-		console.log('Event Fired');
-	});
+// 	// $("body").scroll(function(){
+// 	// 	console.log('scroll triggered')
+// 	// 	$("#imagePlantation").fadeOut(3000);
+// 	// });
+// 	$(document).on( 'scroll', function(){
+// 		console.log('Event Fired');
+// 	});
 
-	$("#imagePlantation").click(function(){
-		$(".textPlantation").fadeIn(3000);
-	});
-})
+// 	$("#imagePlantation").click(function(){
+// 		$(".textPlantation").fadeIn(3000);
+// 	});
+// })
 
 //gebruik evt css manipulation
 //de formule hierboven geeft nu aan hoevaak er gescrolld is.
