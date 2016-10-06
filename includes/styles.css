@@ -119,8 +119,8 @@ input, textarea{
 }
 
 #contact_form{
-	height: 317px;
-	background-color: #e1e9eb;
+	height: 325px;
+	background-color: #cee8ef;
 	border: solid 1px #e5e5e5;
     padding: 10px 20px 50px 20px;
     -webkit-border-radius: 5px;
@@ -142,6 +142,7 @@ input, textarea{
 	font-weight: bold;
 	color: #fff;
     margin-left: 7px;
+    margin-top: 15;
 }
 
 label.required:after {
