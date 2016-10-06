@@ -1,6 +1,14 @@
 //IVM CAROUSEL INACTIEF test to see whether it conflicts
-// $("div #imagePlantation").hide();
-// $("div #imagePlantation").fadeIn(3000);
+$("#myCarousel").hide();
+
+$("#myCarousel")
+  .css('opacity', 0)
+  .slideDown(3000)
+  .animate(
+    { opacity: 1 },
+    { queue: false, duration: 3000 }
+  );
+
 
 // Google Maps on the contact page
 
