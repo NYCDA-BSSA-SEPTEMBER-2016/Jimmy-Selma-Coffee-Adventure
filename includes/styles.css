@@ -65,7 +65,7 @@ h1 {
 
 #map {
         width: 100%;
-        height: 400px;
+        height: 200px;
         background-color: grey;
       }
 
@@ -142,7 +142,11 @@ input, textarea{
 	font-weight: bold;
 	color: #fff;
     margin-left: 7px;
-    margin-top: 15;
+    margin-top: 6px;
+}
+
+#containercontactform {
+	padding-bottom: 50px;
 }
 
 label.required:after {
