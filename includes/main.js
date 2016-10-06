@@ -71,6 +71,10 @@ $(document).ready(function(){
 
 // Contact form functions
 
+$("#submit_button").click(function() {
+  alert( "Submit button doesnt work, please teach us php / ajax / how to send a e-mail." );
+});
+
 $(document).ready(function(){
 	var errors = false;
     $('.required').parent().find('.input').on('blur', function() {
