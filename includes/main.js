@@ -10,6 +10,14 @@ $("#myCarousel")
   );
 
 
+// front page JavaScript
+
+$(document).ready(function () {
+	$('#frontpage').toggleClass('editor')
+});
+
+
+
 // Google Maps on the contact page
 
 function initMap() {
