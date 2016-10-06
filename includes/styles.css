@@ -1,24 +1,21 @@
 /*We need to pick a font for website, maybe a google font?*/
 /*Body nog centreren ook (zie pagina op fullscreen)*/
+.bodyColor {
+	background-color: #ffefcc;
+}
 
-body{
-    width: 414px;
-    font-family: Arial;
+.bodyReplacement{
+	width: 414px;
+	font-family: Arial;
 	font-size: 14px;
-/*	background-color: #b37a00;*/
 	display: table-cell;
-    vertical-align: middle;
-    background-color: #ffefcc;
-    z-index: 0;
+	vertical-align: middle;
+	z-index: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
+.bodyReplacement {
+	display: table;
+	margin: auto;
 }
 
 h1 {
@@ -31,25 +28,25 @@ h1 {
 
 #frontpage {
 	background-image: url("../images/coffeefrontpage.jpg");
-	  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
 	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
 	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
+	img.bg {
+		left: 50%;
+		margin-left: -512px;   /* 50% */
+	}
 }
 
 #leafIconFrontPage{
@@ -76,86 +73,112 @@ h1 {
 }
 
 
-/*footer{
-	background-image: url("./images/coffeefooter.png");
-}*/
+footer{
+	position: relative;
+	background-size: contain;
+	background-color: #ffefcc;
+
+}
+
+.footerImage{
+	z-index: -10;
+		width: 100%;
+}
 
 /*#footerDiv{
 	height: 500px;
 	background-image: url("./images/coffeefooter.png");
-}*/
+	}*/
 
-.container{
-	background-color: #fff7e6;
-	height: 100%;
-}
-
-
-
-/*Navbar*/
-#cartIcon {
-    color: white;
-    font-size: 30px;
-    padding-top: 6px; /*Misschien beter om met verticaal alignen te doen?*/
-    padding-right: 50px;
-    padding-left: 15px; /*(zelfde als de buttons)*/
-}
-
-.navbar {
-	background-color: #4d3300;
-}
-
-#logo {
-	height: 50px;
-	margin-top: -14px;
-    margin-left: -15px;
-}
-
-.navText {
-	font-size: 18px; /*Waarom werkt dit wel*/
-	color: red; /*waarom werkt dit niet*/
-}
-
-.selected {
-	color: white;
-}
-
-/* Google Maps on contact page */
-
-#map {
-        width: 100%;
-        height: 200px;
-        background-color: grey;
-      }
+	.container{
+		background-color: #fff7e6;
+		height: 100%;
+	}
 
 
-/*How to reach us on the contact page*/
-.contact-info li {
-	list-style: none;
-	padding: 0;
-	margin: 0 0 0 20px;
-	font-size: 1.2em
-}
 
-#phoneicon {
-	width: 20px;
-	height: 20px;
+	/*Navbar*/
+	#cartIcon {
+		color: white;
+		font-size: 30px;
+		padding-top: 6px; /*Misschien beter om met verticaal alignen te doen?*/
+		padding-right: 50px;
+		padding-left: 15px; /*(zelfde als de buttons)*/
+	}
 
-}
+	.navbar-inverse {
+		background-color: #4d3300;
+	}
+
+	/* link */
+	.navbar-inverse .navbar-nav > li > a {
+		color: #fff7e6;
+	}
+	.navbar-inverse .navbar-nav > li > a:hover,
+	.navbar-inverse .navbar-nav > li > a:focus {
+		color: #ffefcc;
+	}
+	.navbar-inverse .navbar-nav > .active > a, 
+	.navbar-inverse .navbar-nav > .active > a:hover, 
+	.navbar-inverse .navbar-nav > .active > a:focus {
+		color: #fff7e6;
+		background-color: #4d3400;
+	}
+	.navbar-inverse .navbar-nav > .open > a, 
+	.navbar-inverse .navbar-nav > .open > a:hover, 
+	.navbar-inverse .navbar-nav > .open > a:focus {
+		color: #555;
+		background-color: #4d3400;
+	}
+
+
+
+	#logo {
+		height: 50px;
+		margin-top: -14px;
+		margin-left: -15px;
+	}
+
+	.navText {
+		font-size: 18px; /*Waarom werkt dit wel*/
+	}
+
+	/* Google Maps on contact page */
+
+	#map {
+		width: 100%;
+		height: 200px;
+		background-color: grey;
+	}
+
+
+	/*How to reach us on the contact page*/
+	.contact-info li {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 0 20px;
+		font-size: 1.2em
+	}
+
+	#phoneicon {
+		width: 20px;
+		height: 20px;
+
+	}
 /*
 Contact form ccs
 */
 
 #after_submit, #email_validation, #name_validation {
-    display:none;
+	display:none;
 }
 
 #after_submit{
-    background-color: #c0ffc0;
-    line-height: 31px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    -webkit-border-radius: 3px;
+	background-color: #c0ffc0;
+	line-height: 31px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
@@ -165,11 +188,11 @@ label, #after_submit{
 }
 
 input{
-    line-height: 31px;
+	line-height: 31px;
 }
 
 input, textarea{
-    width: 288px;
+	width: 288px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -181,14 +204,14 @@ input, textarea{
 	height: 325px;
 	background-color: #cee8ef;
 	border: solid 1px #e5e5e5;
-    padding: 10px 20px 50px 20px;
-    -webkit-border-radius: 5px;
+	padding: 10px 20px 50px 20px;
+	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 
 #submit_button{
-    width: 109px;
+	width: 109px;
 	height: 34px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -200,8 +223,8 @@ input, textarea{
 	border: solid 1px #77a4cb;
 	font-weight: bold;
 	color: #fff;
-    margin-left: 7px;
-    margin-top: 6px;
+	margin-left: 7px;
+	margin-top: 6px;
 }
 
 #containercontactform {
@@ -209,20 +232,20 @@ input, textarea{
 }
 
 label.required:after {
-  content:'*';
-  color:red;
+	content:'*';
+	color:red;
 }
 
 .error {
-  background-color:#FFDFDF;
-  color:red;
+	background-color:#FFDFDF;
+	color:red;
 }
 .error_message{
-  font-style: italic;
-  font-size: 10px;
+	font-style: italic;
+	font-size: 10px;
 }
 .row {
-  margin:5px;
+	margin:5px;
 }
 
 /*Philosophy*/
@@ -231,84 +254,84 @@ label.required:after {
 }
 
 .vertical .carousel-inner {
-  height: 100%;
+	height: 100%;
 }
 
 .carousel.vertical .item {
-  -webkit-transition: 0.6s ease-in-out top;
-     -moz-transition: 0.6s ease-in-out top;
-      -ms-transition: 0.6s ease-in-out top;
-       -o-transition: 0.6s ease-in-out top;
-          transition: 0.6s ease-in-out top;
+	-webkit-transition: 0.6s ease-in-out top;
+	-moz-transition: 0.6s ease-in-out top;
+	-ms-transition: 0.6s ease-in-out top;
+	-o-transition: 0.6s ease-in-out top;
+	transition: 0.6s ease-in-out top;
 }
 
 .carousel.vertical .active {
-  top: 0;
+	top: 0;
 }
 
 .carousel.vertical .next {
-  top: 100%;
+	top: 100%;
 }
 
 .carousel.vertical .prev {
-  top: -100%;
+	top: -100%;
 }
 
 .carousel.vertical .next.left,
 .carousel.vertical .prev.right {
-  top: 0;
+	top: 0;
 }
 
 .carousel.vertical .active.left {
-  top: -100%;
+	top: -100%;
 }
 
 .carousel.vertical .active.right {
-  top: 100%;
+	top: 100%;
 }
 
 .carousel.vertical .item {
-    left: 0;
-}​
+	left: 0;
+	}​
 
-.carouselImage {
-	width: 100%;
-}
+	.carouselImage {
+		width: 100%;
+	}
 
-#myCarousel {
-	max-width: 1000px;
-	position: relative;
-	margin: auto;
-}
+	#myCarousel {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+	}
 
-.arrow {
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	font-size: 40px;
-}
+	.arrow {
+		position: absolute;
+		top: 50%;
+		bottom: 50%;
+		font-size: 40px;
+	}
 
-#leafIcon:hover {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
+	.leafIcon:hover {
+		animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		perspective: 1000px;
+	}
 
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
+	@keyframes shake {
+		10%, 90% {
+			transform: translate3d(-1px, 0, 0);
+		}
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
+		20%, 80% {
+			transform: translate3d(2px, 0, 0);
+		}
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
+		30%, 50%, 70% {
+			transform: translate3d(-4px, 0, 0);
+		}
+
+		40%, 60% {
+			transform: translate3d(4px, 0, 0);
+		}
+	}
