@@ -399,8 +399,13 @@ label.required:after {
 	}
 
 /*Webshop*/
-.webshopItem{
-	border: 2px 
-	border-color: #4D3300;
-	width: 60%;
+.webshopItem {
+/*	border: solid 2px #4D3300;*/
+margin-top: 20px;
+margin-bottom: 50px;
+text-align: center;
+}
+
+.card-img-top {
+	width: 60%
 }
