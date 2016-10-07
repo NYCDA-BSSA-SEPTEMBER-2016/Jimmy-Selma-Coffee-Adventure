@@ -71,13 +71,8 @@ h1 {
 	top: 0;
 	left: 0;*/
 /*}*/ /*/ 
+*/
 
-@media screen and (max-width: 800px) { /* Specific to this particular image */
-	/*#frontpage {
-		background-image: url("../images/panda6.jpg");
-		position: relative;
-	}
-}*/
 
 #leafIconFrontPage{
 	font-size: 150px;
@@ -118,6 +113,36 @@ footer{
 .footerImage{
 	z-index: -10;
 	width: 100%;
+}
+
+.footerText {
+	position: absolute;
+	padding-top: 50;
+	bottom: 50%;
+	margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.footerText p { 
+    text-align: center;
+    padding-top: 10%;
+}
+
+.social {
+	padding: 1px;
+}
+
+@media screen and (min-width: 800px) { 
+	.social {
+		/*om de grootte van de social icons aan te passen.*/
+	}
+}
+
+#bottomPage {
+	color: white;
+	position:fixed;
+    bottom: 0;
 }
 
 /*#footerDiv{
@@ -166,8 +191,6 @@ footer{
 		background-color: #4d3400;
 	}
 
-
-
 	#logo {
 		height: 50px;
 		margin-top: -14px;
@@ -175,7 +198,11 @@ footer{
 	}
 
 	.navText {
-		font-size: 18px; /*Waarom werkt dit wel*/
+		font-size: 18px; 
+	}
+
+	#compName {
+		color: ;
 	}
 
 	/* Google Maps on contact page */
@@ -370,3 +397,10 @@ label.required:after {
 			transform: translate3d(4px, 0, 0);
 		}
 	}
+
+/*Webshop*/
+.webshopItem{
+	border: 2px 
+	border-color: #4D3300;
+	width: 60%;
+}
