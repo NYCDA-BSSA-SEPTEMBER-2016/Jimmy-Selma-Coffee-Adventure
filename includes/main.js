@@ -16,7 +16,21 @@ $(document).ready(function () {
 	$('#frontpage').toggleClass('editor')
 });
 
+$(".texttocenter").hide();
+$(document).ready(function(){
+ $(".texttocenter").fadeIn(4000);
+});
 
+
+//fade in text on mouseover text and fade oud when hover away
+$("#frontpagetext1").hide();
+
+$(".frontid1").hover(function(){
+    $("#frontpagetext1").fadeIn("slow");
+},
+function(){
+    $("#frontpagetext1").fadeOut("slow");
+});
 
 // Google Maps on the contact page
 
