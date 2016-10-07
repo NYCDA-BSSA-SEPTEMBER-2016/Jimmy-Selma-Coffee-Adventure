@@ -24,6 +24,8 @@ $(document).ready(function(){
 
 //fade in text on mouseover text and fade oud when hover away
 $("#frontpagetext1").hide();
+$("#frontpagetext2").hide();
+$("#frontpagetext3").hide();
 
 $(".frontid1").hover(function(){
     $("#frontpagetext1").fadeIn("slow");
@@ -31,6 +33,23 @@ $(".frontid1").hover(function(){
 function(){
     $("#frontpagetext1").fadeOut("slow");
 });
+
+//function2
+$(".frontid2").hover(function(){
+    $("#frontpagetext2").fadeIn("slow");
+},
+function(){
+    $("#frontpagetext2").fadeOut("slow");
+});
+
+//function3
+$(".frontid3").hover(function(){
+    $("#frontpagetext3").fadeIn("slow");
+},
+function(){
+    $("#frontpagetext3").fadeOut("slow");
+});
+
 
 // Google Maps on the contact page
 
