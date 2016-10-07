@@ -53,12 +53,14 @@ h1 {
 	font-size: 150px;
 	 z-index: 10;
 	 color: #4d3300;
+	 text-align: center;
 }
 
 #leafIconFrontPage1{
 	font-size: 150px;
 	 z-index: 10;
 	 color: #4d3300;
+	 text-align: center;
 }
 
 #leafIconFrontPage2{
@@ -110,6 +112,33 @@ h1 {
           transform: rotate(360deg);
 }
 
+#frontpagetext1 {
+text-align: center;
+	 border: solid 2px #4D3300;
+	 background-color: #fff7e6;
+	 border-radius: 50%;
+	 padding: 30px 10px 25px 10px;
+}
+
+#frontpagetext2 {
+text-align: center;
+	 border: solid 2px #4D3300;
+	 background-color: #fff7e6;
+	 border-radius: 50%;
+	 padding: 30px 10px 25px 10px;
+	 background: transparent;
+	background-color: #fff7e6;
+}
+
+
+
+#frontpagetext3 {
+text-align: center;
+	 border: solid 2px #4D3300;
+	 background-color: #fff7e6;
+	 border-radius: 50%;
+	 padding: 35px 15px 35px 15px;
+}
 
 footer{
 	position: relative;
