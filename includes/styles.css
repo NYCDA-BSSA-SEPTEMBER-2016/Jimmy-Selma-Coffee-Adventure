@@ -1,9 +1,6 @@
-/*We need to pick a font for website, maybe a google font?*/
-/*Body nog centreren ook (zie pagina op fullscreen)*/
 .bodyColor {
 	background-color: #ffefcc;
 }
-
 
 .bodyReplacement{
 	width: 414px;
@@ -28,21 +25,21 @@ h1 {
 /*Front page*/
 
 #frontpage {
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
-    min-width: 100vh;
- }
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	min-width: 100vh;
+}
 
 #frontpage:before {
 	content: ' ';
-    position: absolute;
-    opacity: 1;
-    background-image: url("../images/coffeefrontpage.jpg");
-    -webkit-transition: opacity 5s; /* For Safari 3.1 to 6.0 */
-    transition: opacity 5s;
-    min-height: 100%;
-    min-width: 100%;
+	position: absolute;
+	opacity: 1;
+	background-image: url("../images/coffeefrontpage.jpg");
+	-webkit-transition: opacity 5s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 5s;
+	min-height: 100%;
+	min-width: 100%;
 }
 
 .editor:before {
@@ -51,95 +48,110 @@ h1 {
 
 #leafIconFrontPage{
 	font-size: 150px;
-	 z-index: 10;
-	 color: #4d3300;
-	 text-align: center;
+	z-index: 10;
+	color: #4d3300;
+	text-align: center;
 }
 
 #leafIconFrontPage1{
 	font-size: 150px;
-	 z-index: 10;
-	 color: #4d3300;
-	 text-align: center;
+	z-index: 10;
+	color: #4d3300;
+	text-align: center;
 }
 
 #leafIconFrontPage2{
 	font-size: 150px;
-	 z-index: 10;
-	 color: #4d3300;
+	z-index: 10;
+	color: #4d3300;
 }
 
 .texttocenter{
 	text-align: center;
 	margin-top: 55%;
-	 z-index: 2;
+	z-index: 2;
 }
 
 .fontfrontpage {
 	color: white;
 	text-align: center;
 	margin-top: -60px;
-	 z-index: 2;
+	z-index: 2;
 }
 
 #leafIconFrontPage {
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
+	border-radius: 50%;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition:         transform .8s ease-in-out;
 }
 #leafIconFrontPage:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
 #leafIconFrontPage1 {
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
+	border-radius: 50%;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition:         transform .8s ease-in-out;
 }
 #leafIconFrontPage1:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
 #leafIconFrontPage2 {
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
+	border-radius: 50%;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition:         transform .8s ease-in-out;
 }
 #leafIconFrontPage2:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
 #frontpagetext1 {
-text-align: center;
-	 border: solid 2px #4D3300;
-	 background-color: #fff7e6;
-	 border-radius: 50%;
-	 padding: 30px 10px 25px 10px;
+	text-align: center;
+	border: solid 2px #4D3300;
+	background-color: #fff7e6;
+	border-radius: 50%;
+	padding: 30px 10px 25px 10px;
 }
 
 #frontpagetext2 {
-text-align: center;
-	 border: solid 2px #4D3300;
-	 background-color: #fff7e6;
-	 border-radius: 50%;
-	 padding: 30px 10px 25px 10px;
-	 background: transparent;
+	text-align: center;
+	border: solid 2px #4D3300;
+	background-color: #fff7e6;
+	border-radius: 50%;
+	padding: 30px 10px 25px 10px;
+	background: transparent;
 	background-color: #fff7e6;
 }
 
-
-
 #frontpagetext3 {
-text-align: center;
-	 border: solid 2px #4D3300;
-	 background-color: #fff7e6;
-	 border-radius: 50%;
-	 padding: 35px 15px 35px 15px;
+	text-align: center;
+	border: solid 2px #4D3300;
+	background-color: #fff7e6;
+	border-radius: 50%;
+	padding: 35px 15px 35px 15px;
 }
 
+#frontpageLogo {
+	text-align: center;
+	margin-bottom: -100px;
+}
+
+#frontpageLogo h1 {
+	color: white;
+	font-size: 80px;
+}
+
+#frontpageLogo h2 {
+	color: white;
+	font-size: 40px;
+	margin-top: -40px;
+}
+
+/*Footer*/
 footer{
 	position: relative;
 	background-size: contain;
@@ -157,13 +169,13 @@ footer{
 	padding-top: 50;
 	bottom: 50%;
 	margin: 0 auto;
-  left: 0;
-  right: 0;
+	left: 0;
+	right: 0;
 }
 
 .footerText p { 
-    text-align: center;
-    padding-top: 10%;
+	text-align: center;
+	padding-top: 10%;
 }
 
 .social {
@@ -179,103 +191,90 @@ footer{
 #bottomPage {
 	color: white;
 	position:fixed;
-    bottom: 0;
+	bottom: 0;
 }
 
-/*#footerDiv{
-	height: 500px;
-	background-image: url("./images/coffeefooter.png");
-	}*/
+.container{
+	background-color: #fff7e6;
+	height: 100%;
+}
 
-	.container{
-		background-color: #fff7e6;
-		height: 100%;
-	}
+/*Navbar*/
+#cartIcon {
+	color: white;
+	font-size: 30px;
+	padding-top: 6px; /*Misschien beter om met verticaal alignen te doen?*/
+	padding-right: 50px;
+	padding-left: 15px; /*(zelfde als de buttons)*/
+}
 
+.navbar-inverse {
+	background-color: #4d3300;
+}
 
+/* link */
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff7e6;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+	color: #ffefcc;
+}
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+	color: #fff7e6;
+	background-color: #4d3400;
+}
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
+	color: #555;
+	background-color: #4d3400;
+}
 
-	/*Navbar*/
-	#cartIcon {
-		color: white;
-		font-size: 30px;
-		padding-top: 6px; /*Misschien beter om met verticaal alignen te doen?*/
-		padding-right: 50px;
-		padding-left: 15px; /*(zelfde als de buttons)*/
-	}
+#logo {
+	height: 50px;
+	margin-top: -14px;
+	margin-left: -15px;
+}
 
-	.navbar-inverse {
-		background-color: #4d3300;
-	}
+.navText {
+	font-size: 18px; 
+}
 
-	/* link */
-	.navbar-inverse .navbar-nav > li > a {
-		color: #fff7e6;
-	}
-	.navbar-inverse .navbar-nav > li > a:hover,
-	.navbar-inverse .navbar-nav > li > a:focus {
-		color: #ffefcc;
-	}
-	.navbar-inverse .navbar-nav > .active > a, 
-	.navbar-inverse .navbar-nav > .active > a:hover, 
-	.navbar-inverse .navbar-nav > .active > a:focus {
-		color: #fff7e6;
-		background-color: #4d3400;
-	}
-	.navbar-inverse .navbar-nav > .open > a, 
-	.navbar-inverse .navbar-nav > .open > a:hover, 
-	.navbar-inverse .navbar-nav > .open > a:focus {
-		color: #555;
-		background-color: #4d3400;
-	}
+#compName {
+	color: ;
+}
 
-	#logo {
-		height: 50px;
-		margin-top: -14px;
-		margin-left: -15px;
-	}
-
-	.navText {
-		font-size: 18px; 
-	}
-
-	#compName {
-		color: ;
-	}
-
-	/* Google Maps on contact page */
-
-	#map {
-		width: 100%;
-		height: 200px;
-		background-color: grey;
-	}
+/* Google Maps on contact page */
+#map {
+	width: 100%;
+	height: 200px;
+	background-color: grey;
+}
 
 
-	/*How to reach us on the contact page*/
-	.contact-info li {
-		list-style: none;
-		padding: 0;
-		margin: 0 0 0 20px;
-		font-size: 1.2em
-	}
+/*How to reach us on the contact page*/
+.contact-info li {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 20px;
+	font-size: 1.2em
+}
 
-	#phoneicon {
-		width: 20px;
-		height: 20px;
+#phoneicon {
+	width: 20px;
+	height: 20px;
 
-	}
+}
 
 #imgTeam {
 	width: 100%;
 	height: 100%;
 }
 
-
-
-/*
-Contact form ccs
-*/
-
+/*Contact form ccs*/
 #after_submit, #email_validation, #name_validation {
 	display:none;
 }
@@ -401,49 +400,49 @@ label.required:after {
 
 .carousel.vertical .item {
 	left: 0;
-	}​
+}​
 
-	.carouselImage {
-		width: 100%;
+.carouselImage {
+	width: 100%;
+}
+
+#myCarousel {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	font-size: 40px;
+}
+
+.leafIcon:hover {
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+	10%, 90% {
+		transform: translate3d(-1px, 0, 0);
 	}
 
-	#myCarousel {
-		max-width: 1000px;
-		position: relative;
-		margin: auto;
+	20%, 80% {
+		transform: translate3d(2px, 0, 0);
 	}
 
-	.arrow {
-		position: absolute;
-		top: 50%;
-		bottom: 50%;
-		font-size: 40px;
+	30%, 50%, 70% {
+		transform: translate3d(-4px, 0, 0);
 	}
 
-	.leafIcon:hover {
-		animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-		transform: translate3d(0, 0, 0);
-		backface-visibility: hidden;
-		perspective: 1000px;
+	40%, 60% {
+		transform: translate3d(4px, 0, 0);
 	}
-
-	@keyframes shake {
-		10%, 90% {
-			transform: translate3d(-1px, 0, 0);
-		}
-
-		20%, 80% {
-			transform: translate3d(2px, 0, 0);
-		}
-
-		30%, 50%, 70% {
-			transform: translate3d(-4px, 0, 0);
-		}
-
-		40%, 60% {
-			transform: translate3d(4px, 0, 0);
-		}
-	}
+}
 
 .carousel-caption {
 	color: #fff7e6;
@@ -482,9 +481,9 @@ label.required:after {
 	border: solid 1px black;
 }
 
-	.shopcart:hover {
-		animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-		transform: translate3d(0, 0, 0);
-		backface-visibility: hidden;
-		perspective: 1000px;
-	}
+.shopcart:hover {
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
