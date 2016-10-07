@@ -216,22 +216,25 @@ var cartNames = []
 $('#jimmy100').click(function(){
 cart.push(100);
 cartNames.push("Jim My Gold");
-// alert("Added Jim My Gold to cart.")
+console.log("Added Jim My Gold to cart.")
 })
 
 $('#jimmy50').click(function(){
 cart.push(50);
 cartNames.push("Jim My Aroma");
+console.log("Added Jim My Aroma to cart.")
 })
 
 $('#selma125').click(function(){
 cart.push(125);
 cartNames.push("Sel My Gold");
+console.log("Added Sel My Gold to cart.")
 })
 
 $('#selma75').click(function(){
 cart.push(75);
 cartNames.push("Sel My Aroma");
+console.log("Added Sel My Aroma to cart.")
 })
 
 $('#cartIcon').click(function(){
