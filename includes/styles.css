@@ -264,6 +264,14 @@ footer{
 		height: 20px;
 
 	}
+
+#imgTeam {
+	width: 100%;
+	height: 100%;
+}
+
+
+
 /*
 Contact form ccs
 */
@@ -324,10 +332,12 @@ input, textarea{
 	color: #fff;
 	margin-left: 7px;
 	margin-top: 6px;
+
 }
 
 #containercontactform {
 	padding-bottom: 50px;
+
 }
 
 label.required:after {
@@ -435,14 +445,39 @@ label.required:after {
 		}
 	}
 
+.carousel-caption {
+	color: #fff7e6;
+	text-shadow: -1px 0 #4D3300, 0 1px #4D3300, 1px 0 #4D3300, 0 -1px #4D3300;
+}
+
+.carousel-caption h3 {
+	font-size: 35px;
+}
+
+.carousel-caption p {
+	font-size: 22px;
+}
+
 /*Webshop*/
 .webshopItem {
-/*	border: solid 2px #4D3300;*/
-margin-top: 20px;
-margin-bottom: 50px;
-text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 .card-img-top {
 	width: 60%
+}
+
+.card-img-top {
+	border: solid 2px #4D3300
+}
+
+.makeGrey {
+	color: grey;
+}
+
+.btn {
+	background-color: #4D3300;
+	border: solid 1px black;
 }
