@@ -1,0 +1,9 @@
+How to navigate our webshop:
+On every page, the cart will tell you you have zero items.
+
+However, if you go to the webshop page, it works. What we recommend:
+- Open your browser console
+- Add all the items you want to your cart. We recommend you take a different amount of different items for the full experience. 
+- Click the shopping cart in the top right corner.
+
+If all goes well, a console.log will confirm every time you add an item to your cart. When clicking the shopping cart, an alert will tell you the total amount and total items. Clicking that away, the console will tell you how many of each you have in your cart.

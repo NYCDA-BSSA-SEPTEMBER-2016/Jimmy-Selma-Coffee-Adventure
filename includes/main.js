@@ -1,4 +1,4 @@
-//IVM CAROUSEL INACTIEF test to see whether it conflicts
+//Entrance carousel philosophy page
 $("#myCarousel").hide();
 
 $("#myCarousel")
@@ -11,7 +11,6 @@ $("#myCarousel")
 
 
 // front page JavaScript
-
 $(document).ready(function () {
 	$('#frontpage').toggleClass('editor')
 });
@@ -31,7 +30,7 @@ $(".frontid1").hover(function(){
 	$("#frontpagetext1").fadeIn("slow");
 },
 function(){
-	$("#frontpagetext1").fadeOut("slow");
+	$("#frontpagetext1").fadeOut(20000);
 });
 
 //function2
@@ -39,7 +38,7 @@ $(".frontid2").hover(function(){
 	$("#frontpagetext2").fadeIn("slow");
 },
 function(){
-	$("#frontpagetext2").fadeOut("slow");
+	$("#frontpagetext2").fadeOut(20000);
 });
 
 //function3
@@ -47,12 +46,11 @@ $(".frontid3").hover(function(){
 	$("#frontpagetext3").fadeIn("slow");
 },
 function(){
-	$("#frontpagetext3").fadeOut("slow");
+	$("#frontpagetext3").fadeOut(20000);
 });
 
 
 // Google Maps on the contact page
-
 function initMap() {
 	var AmsterdamCity = {lat: 52.341099, lng: 4.823463};
 	var map = new google.maps.Map(document.getElementById('map'), {
@@ -64,62 +62,8 @@ function initMap() {
 		map: map
 	});
 }
-//IVM CAROUSEL INACTIEFfadeOut image/fadeIn tekst
-// $(document).ready(function(){
-// 	$(".textPlantation").hide();
-
-// 	// $("body").scroll(function(){
-// 	// 	console.log('scroll triggered')
-// 	// 	$("#imagePlantation").fadeOut(3000);
-// 	// });
-// 	$(document).on( 'scroll', function(){
-// 		console.log('Event Fired');
-// 	});
-
-// 	$("#imagePlantation").click(function(){
-// 		$(".textPlantation").fadeIn(3000);
-// 	});
-// })
-
-//gebruik evt css manipulation
-//de formule hierboven geeft nu aan hoevaak er gescrolld is.
-
-//Dit is dat hij outfade als je een lange pagina hebt. dus helaas niet wat we zoeken.
-// $(window).scroll(function () {
-//     var scrollTop = $(window).scrollTop();
-//     var height = $(window).height();
-//     $("#imagePlantation").css({
-//         'opacity': ((height - scrollTop) / height)
-//     });
-// });
-
-
-// $("#imagePlantation").animate({ height: 'toggle', opacity: 'toggle' }, 5000);
-// $("#imagePlantation").animate({ height: 0, opacity: 0 }, 5000);
-
-// function slideFade(elem) {
-//    var fade = { opacity: 1, transition: 'opacity 0.5s' };
-//    elem.css(fade).slideUp(5000);
-//    }
-// slideFade($('#imagePlantation'));
-
-
-
-
-
-
-// $(window).scroll(function() {
-//     $("#imagePlantation").css({
-//     'opacity' : 1-(($(this).scrollTop())/100)
-//     });          
-
-// });
-
-
-// });
 
 // Contact form functions
-
 $("#submit_button").click(function() {
 	alert( "Submit button doesnt work, please teach us php / ajax / how to send a e-mail." );
 });
@@ -208,75 +152,120 @@ $.fn.serializeObject = function()
 	return o;
 };
 
-// Webshop
 
+// Webshop
 var cart = []
 var cartNames = []
 
 $('#jimmy100').click(function(){
-cart.push(100);
-cartNames.push("Jim My Gold");
-console.log("Added Jim My Gold to cart.")
+	cart.push(100);
+	cartNames.push("Jim My Gold");
+	console.log("Added Jim My Gold to cart.")
 })
 
 $('#jimmy50').click(function(){
-cart.push(50);
-cartNames.push("Jim My Aroma");
-console.log("Added Jim My Aroma to cart.")
+	cart.push(50);
+	cartNames.push("Jim My Aroma");
+	console.log("Added Jim My Aroma to cart.")
 })
 
 $('#selma125').click(function(){
-cart.push(125);
-cartNames.push("Sel My Gold");
-console.log("Added Sel My Gold to cart.")
+	cart.push(125);
+	cartNames.push("Sel My Gold");
+	console.log("Added Sel My Gold to cart.")
 })
 
 $('#selma75').click(function(){
-cart.push(75);
-cartNames.push("Sel My Aroma");
-console.log("Added Sel My Aroma to cart.")
+	cart.push(75);
+	cartNames.push("Sel My Aroma");
+	console.log("Added Sel My Aroma to cart.")
 })
 
 $('#cartIcon').click(function(){
-var total = 0
+	var total = 0
 	for(var i = 0; i<cart.length; i++){
 		total += cart[i] //+= betekent: het nieuwe totaal is het totaal + de uitkomst van de loop. En dat elke keer weer.
 	}
 	alert ("You have " + i + " items with a total amount of: \u20AC " + total)
+
+// This will have a new html window popup, but it's ugly as hell.
+// var site="You have " + i + " items with a total amount of: \u20AC " + total;
+// var popupWindow = window.open("popup.html","","height=200,width=300");
+// popupWindow.document.write(site);
+// popupWindow.document.close();
 })
 
 $('#cartIcon').click(function(){
-var total = 0
+	var total = 0
 	for(var i = 0; i<cartNames.length; i++){
 		total += cartNames[i] //+= betekent: het nieuwe totaal is het totaal + de uitkomst van de loop. En dat elke keer weer.
 	}
-
 })
-
 
 
 $('#cartIcon').click(function(){
-console.log("You have the following items:")
-   cartNames.sort();
+	console.log("You have the following items:")
+	cartNames.sort();
 
-   var nameItem = null;
-   var count = 0;
-   for (var i = 0; i < cartNames.length; i++) {
-       if (cartNames[i] != nameItem) {
-           if (count > 0) {
-               console.log(count + " times " + nameItem);
-           }
-           nameItem = cartNames[i];
-           count = 1;
-       } else {
-           count++;
-       }
-   }
-   if (count > 0) {
-       console.log(count + " times " + nameItem);
-   }
-
+	var nameItem = null;
+	var count = 0;
+	for (var i = 0; i < cartNames.length; i++) {
+		if (cartNames[i] != nameItem) {
+			if (count > 0) {
+				console.log(count + " times " + nameItem);
+			}
+			nameItem = cartNames[i];
+			count = 1;
+		} else {
+			count++;
+		}
+	}
+	if (count > 0) {
+		console.log(count + " times " + nameItem);
+	}
 })
 
 
 
+
+
+
+//Old code, for philosophy page, pre caroussel
+//IVM CAROUSEL INACTIEFfadeOut image/fadeIn tekst
+// $(document).ready(function(){
+// 	$(".textPlantation").hide();
+
+// 	// $("body").scroll(function(){
+// 	// 	console.log('scroll triggered')
+// 	// 	$("#imagePlantation").fadeOut(3000);
+// 	// });
+// 	$(document).on( 'scroll', function(){
+// 		console.log('Event Fired');
+// 	});
+
+// 	$("#imagePlantation").click(function(){
+// 		$(".textPlantation").fadeIn(3000);
+// 	});
+// })
+
+//gebruik evt css manipulation
+//de formule hierboven geeft nu aan hoevaak er gescrolld is.
+
+//Dit is dat hij outfade als je een lange pagina hebt. dus helaas niet wat we zoeken.
+// $(window).scroll(function () {
+//     var scrollTop = $(window).scrollTop();
+//     var height = $(window).height();
+//     $("#imagePlantation").css({
+//         'opacity': ((height - scrollTop) / height)
+//     });
+// });
+
+
+// $("#imagePlantation").animate({ height: 'toggle', opacity: 'toggle' }, 5000);
+// $("#imagePlantation").animate({ height: 0, opacity: 0 }, 5000);
+
+// function slideFade(elem) {
+//    var fade = { opacity: 1, transition: 'opacity 0.5s' };
+//    elem.css(fade).slideUp(5000);
+//    }
+// slideFade($('#imagePlantation'));
