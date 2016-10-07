@@ -241,3 +241,39 @@ var total = 0
 	}
 	alert ("You have " + i + " items with a total amount of: \u20AC " + total)
 })
+
+$('#cartIcon').click(function(){
+var total = 0
+	for(var i = 0; i<cartNames.length; i++){
+		total += cartNames[i] //+= betekent: het nieuwe totaal is het totaal + de uitkomst van de loop. En dat elke keer weer.
+	}
+
+})
+
+
+
+$('#cartIcon').click(function(){
+console.log("You have the following items:")
+   cartNames.sort();
+
+   var nameItem = null;
+   var count = 0;
+   for (var i = 0; i < cartNames.length; i++) {
+       if (cartNames[i] != nameItem) {
+           if (count > 0) {
+               console.log(count + " times " + nameItem);
+           }
+           nameItem = cartNames[i];
+           count = 1;
+       } else {
+           count++;
+       }
+   }
+   if (count > 0) {
+       console.log(count + " times " + nameItem);
+   }
+
+})
+
+
+
