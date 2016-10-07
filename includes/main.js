@@ -2,12 +2,12 @@
 $("#myCarousel").hide();
 
 $("#myCarousel")
-  .css('opacity', 0)
-  .slideDown(3000)
-  .animate(
-    { opacity: 1 },
-    { queue: false, duration: 3000 }
-  );
+.css('opacity', 0)
+.slideDown(3000)
+.animate(
+	{ opacity: 1 },
+	{ queue: false, duration: 3000 }
+	);
 
 
 // front page JavaScript
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 $(".texttocenter").hide();
 $(document).ready(function(){
- $(".texttocenter").fadeIn(4000);
+	$(".texttocenter").fadeIn(4000);
 });
 
 
@@ -28,42 +28,42 @@ $("#frontpagetext2").hide();
 $("#frontpagetext3").hide();
 
 $(".frontid1").hover(function(){
-    $("#frontpagetext1").fadeIn("slow");
+	$("#frontpagetext1").fadeIn("slow");
 },
 function(){
-    $("#frontpagetext1").fadeOut("slow");
+	$("#frontpagetext1").fadeOut("slow");
 });
 
 //function2
 $(".frontid2").hover(function(){
-    $("#frontpagetext2").fadeIn("slow");
+	$("#frontpagetext2").fadeIn("slow");
 },
 function(){
-    $("#frontpagetext2").fadeOut("slow");
+	$("#frontpagetext2").fadeOut("slow");
 });
 
 //function3
 $(".frontid3").hover(function(){
-    $("#frontpagetext3").fadeIn("slow");
+	$("#frontpagetext3").fadeIn("slow");
 },
 function(){
-    $("#frontpagetext3").fadeOut("slow");
+	$("#frontpagetext3").fadeOut("slow");
 });
 
 
 // Google Maps on the contact page
 
 function initMap() {
-        var AmsterdamCity = {lat: 52.341099, lng: 4.823463};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: AmsterdamCity
-        });
-        var marker = new google.maps.Marker({
-          position: AmsterdamCity,
-          map: map
-        });
-      }
+	var AmsterdamCity = {lat: 52.341099, lng: 4.823463};
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 12,
+		center: AmsterdamCity
+	});
+	var marker = new google.maps.Marker({
+		position: AmsterdamCity,
+		map: map
+	});
+}
 //IVM CAROUSEL INACTIEFfadeOut image/fadeIn tekst
 // $(document).ready(function(){
 // 	$(".textPlantation").hide();
@@ -121,89 +121,123 @@ function initMap() {
 // Contact form functions
 
 $("#submit_button").click(function() {
-  alert( "Submit button doesnt work, please teach us php / ajax / how to send a e-mail." );
+	alert( "Submit button doesnt work, please teach us php / ajax / how to send a e-mail." );
 });
 
 $(document).ready(function(){
 	var errors = false;
-    $('.required').parent().find('.input').on('blur', function() {
-        var error_div = $(this).parent().find('.error_message');
-        var field_container = $(this).parent();
-        if (!$.empty_field_validation($(this).val())) {
-            error_div.html('This field is required.');
-            error_div.css('display', 'block');
-            field_container.addClass('error');
+	$('.required').parent().find('.input').on('blur', function() {
+		var error_div = $(this).parent().find('.error_message');
+		var field_container = $(this).parent();
+		if (!$.empty_field_validation($(this).val())) {
+			error_div.html('This field is required.');
+			error_div.css('display', 'block');
+			field_container.addClass('error');
 			errors = true;
-        } else {
-            error_div.html('');
-            error_div.css('display', 'none');
-            field_container.removeClass('error');
+		} else {
+			error_div.html('');
+			error_div.css('display', 'none');
+			field_container.removeClass('error');
 			errors = false;
-        }
-    });
-    $('#email').on('blur', function(){
-        var error_div = $(this).parent().find('.error_message');
-        var field_container = $(this).parent();
-        if (!$.email_validation($(this).val())) {
-            error_div.html('Expected Input: email');
-            error_div.css('display', 'block');
-            field_container.addClass('error');
+		}
+	});
+	$('#email').on('blur', function(){
+		var error_div = $(this).parent().find('.error_message');
+		var field_container = $(this).parent();
+		if (!$.email_validation($(this).val())) {
+			error_div.html('Expected Input: email');
+			error_div.css('display', 'block');
+			field_container.addClass('error');
 			errors = true;
-        } else {
-            error_div.html('');
-            error_div.css('display', 'none');
-            field_container.removeClass('error');
+		} else {
+			error_div.html('');
+			error_div.css('display', 'none');
+			field_container.removeClass('error');
 			errors = false;
-        }
-    });
+		}
+	});
 	$('#contact_form').submit(function(event) {
 		event.preventDefault();
-		 $('.required').parent().find('.input').trigger('blur');
-        if (!errors)
-            $.ajax({
-                url: '/echo/json/',
-                data: {
-                    json: JSON.stringify($(this).serializeObject())
-                },
-                type: 'post',
-                success: function(data) {
-                    var message = 'Hi '+data.name+'. Your message was sent and received.';
-                    $('#after_submit').html(message);
-                    $('#after_submit').css('display', 'block');
-                },
-                error: function() {
-                    var message = 'Hi '+data.name+'. Your message could not be sent or received. Please try again later';
-                    $('#after_submit').html(message);
-                    $('#after_submit').css('display', 'block'); 
-                }
-            });
+		$('.required').parent().find('.input').trigger('blur');
+		if (!errors)
+			$.ajax({
+				url: '/echo/json/',
+				data: {
+					json: JSON.stringify($(this).serializeObject())
+				},
+				type: 'post',
+				success: function(data) {
+					var message = 'Hi '+data.name+'. Your message was sent and received.';
+					$('#after_submit').html(message);
+					$('#after_submit').css('display', 'block');
+				},
+				error: function() {
+					var message = 'Hi '+data.name+'. Your message could not be sent or received. Please try again later';
+					$('#after_submit').html(message);
+					$('#after_submit').css('display', 'block'); 
+				}
+			});
 		else
 			alert("You didn't completed the form correctly. Check it out and try again!");
 	});
 });
 
 $.empty_field_validation = function(field_value) {
-    if (field_value.trim() == '') return false;
-    return true;
+	if (field_value.trim() == '') return false;
+	return true;
 }
-    
+
 $.email_validation = function(email) {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    return regex.test(email);
+	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	return regex.test(email);
 }
 $.fn.serializeObject = function()
 {
-   var o = {};
-   var a = this.serializeArray();
-   $.each(a, function() {
-       if (o[this.name]) {
-           if (!o[this.name].push) {
-               o[this.name] = [o[this.name]];
-           }
-           o[this.name].push(this.value || '');
-       } else {
-           o[this.name] = this.value || '';
-       }
-   });
-   return o;
+	var o = {};
+	var a = this.serializeArray();
+	$.each(a, function() {
+		if (o[this.name]) {
+			if (!o[this.name].push) {
+				o[this.name] = [o[this.name]];
+			}
+			o[this.name].push(this.value || '');
+		} else {
+			o[this.name] = this.value || '';
+		}
+	});
+	return o;
 };
+
+// Webshop
+
+var cart = []
+var cartNames = []
+
+$('#jimmy100').click(function(){
+cart.push(100);
+cartNames.push("Jim My Gold");
+// alert("Added Jim My Gold to cart.")
+})
+
+$('#jimmy50').click(function(){
+cart.push(50);
+cartNames.push("Jim My Aroma");
+})
+
+$('#selma125').click(function(){
+cart.push(125);
+cartNames.push("Sel My Gold");
+})
+
+$('#selma75').click(function(){
+cart.push(75);
+cartNames.push("Sel My Aroma");
+})
+
+$('#cartIcon').click(function(){
+var total = 0
+	for(var i = 0; i<cart.length; i++){
+		total += cart[i] //+= betekent: het nieuwe totaal is het totaal + de uitkomst van de loop. En dat elke keer weer.
+	}
+	alert ("You have " + i + " items with a total amount of: \u20AC " + total)
+})
